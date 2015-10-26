@@ -1,0 +1,104 @@
+body{
+	font-size: 20px;
+}
+.box{
+	width: 75%;
+	height: 200px;
+	background-color: cyan;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+
+.show-desktop{
+	display: block;
+}
+.show-mobile{
+	display: none;
+}
+@media (max-width: 600px){
+	.show-desktop{
+		display: none;
+	}
+	.show-mobile{
+		display: block;
+	}
+}
+@media (max-width: 600px){
+	body{
+		font-size: 82%;
+	}
+}
+@media (max-width: 800px){
+	.sports{
+		display: none;
+	}
+	@media(max-width: 700px){
+		.health{display: none;}
+	}
+	@media(max-width: 600px){
+		.tech{display: none;}
+	}
+}
+.nav{
+	float: left;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #4C4343;
+	color: white;
+	margin: 5px;
+
+}
+.collapse{
+	background-color: #4C4343;
+}
+.ham{
+	float: left;
+	display: inline;
+}
+#container {
+    width: 640px;
+    margin: 0 auto;
+} 
+#Left_column {
+    float: left;
+    width: 320px;
+    min-height: 350px;
+} 
+ 
+p{
+    padding: 5%;
+    margin: 0;
+}
+#Right_column {
+    float: left;
+}
+@media(min-width: 600px){
+	img{ width: 320px;
+    	height: 320px;
+		}
+}
+@media screen and (max-width: 600px){
+ 	#container {
+	    width: 320px;
+	    margin: 0 auto;
+	    }
+	 
+	#Left_column {
+	    float: none;
+	    }
+	 
+	#Right_column {
+	    float: none;
+	    }
+	img{height: 100%;
+		width: 100%
+	}
+}
+.name{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
